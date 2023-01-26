@@ -7,5 +7,12 @@
   },
   "scripts": {
     "start": "node token.js"
-  }
+  },
+  "name": "node_modeule",
+  "version": "1.0.0",
+  "main": "token.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
