@@ -3,8 +3,8 @@ const {RtcTokenBuilder, RtcRole} = require('agora-access-token');
 const dotenv = require('dotenv');
 const app = express();
 
-const APP_ID='66d833d1c0c24d149749a1819a0df40f';
-const APP_CERTIFICATE='d66b0205a9ea49fa86a8396d186fa9d9';
+const APP_ID='6998e3d31d4546d598c9689f67558a85';
+const APP_CERTIFICATE='8173f55d6c744c949ac1009a8b47118c';
 let PORT=process.env.PORT || 3000;
 
 
@@ -16,6 +16,8 @@ const nocache = (_, resp, next) => {
 }
 
 const generateRTCToken = (req, resp) => {
+  console.log("request", req.query);
+  // console.log("res", resp);
   resp.header('Access-Control-Allow-Origin', '*');
     const channelName = req.params.channel;
     if (!channelName) {
